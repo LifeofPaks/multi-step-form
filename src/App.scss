@@ -16,6 +16,21 @@ button, input{
 
 button{
   cursor: pointer;
+
+  &.primaryBtn{
+    color: $White;
+    background: $Marine-blue;
+    width: fit-content;
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  &.secondaryBtn{
+    color: $Cool-gray;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 li{

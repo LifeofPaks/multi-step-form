@@ -1,0 +1,85 @@
+@import "../../../styles/Responsive.scss";
+@import "../../../styles/Variables.scss";
+
+.summary{
+    width: 450px;
+
+    .summaryContainer{
+        background: $Magnolia;
+        padding: 1.3rem;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+
+        .topLayer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1.3rem;
+            margin-bottom: 1.3rem;
+            border-bottom: .5px solid $Light-gray;
+
+            .left{
+                h3{
+                    font-size: 1rem;
+                    color: $Marine-blue;
+                    font-weight: 500;
+                }
+
+                button{
+                    color: $Cool-gray;
+                    text-decoration: underline;
+                }
+            }
+
+            .right{
+                p{
+                    color: $Marine-blue;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p{
+                    color: $Cool-gray;
+                    font-size: 14px;
+                }
+                span{
+                    font-size: 14px;
+                    color: $Marine-blue;
+                }
+            }
+        }
+    }
+
+    .priceSummary{
+        padding-inline: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 9.5rem;
+
+        p{
+            color: $Cool-gray;
+            font-size: 14px;
+        }
+
+        .totalSum{
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: $Purplish-blue;
+        }
+    }
+
+    .primaryBtn{
+        background: $Purplish-blue;
+    }
+}

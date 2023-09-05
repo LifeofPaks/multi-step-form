@@ -1,0 +1,58 @@
+@import '../../../styles/Responsive.scss';
+@import '../../../styles/Variables.scss';
+
+.plan{
+
+        .plansWrapper{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .togglePlan{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 8rem;
+            background: $Magnolia;
+            padding-block: 1rem;
+            border-radius: 10px;
+            gap: 1rem;
+            transform: translateY(2rem);
+
+            p{
+                font-weight: 500;
+                color: $Cool-gray;
+                font-size: 14px;
+                transition: .3s;
+
+                &.active{
+                    color: $Marine-blue;
+                }
+            }
+
+            .toggler{
+                width: 40px;
+                background: $Marine-blue;
+                padding: 4px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: .3s;
+
+                &.active{
+                    padding-left: 24px;
+                }
+
+                .track{
+                    width: 12px;
+                    height: 12px;
+                    background: $White;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+        }
+
+     
+}

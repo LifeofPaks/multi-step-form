@@ -1,0 +1,66 @@
+@import "../../../styles/Responsive.scss";
+@import "../../../styles/Variables.scss";
+
+.addOnOption{
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        border: 1px solid $Light-gray;
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+  
+        &.active {
+          border-color: $Marine-blue;
+          background: $Magnolia;
+        }
+  
+        .left {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+  
+          .checkBox {
+            width: 20px;
+            height: 20px;
+            border: 1px solid $Light-gray;
+            border-radius: 4px;
+            display: grid;
+            place-content: center;
+  
+            &.active {
+              background: $Purplish-blue;
+              border: 1px solid $Purplish-blue;
+              border-radius: 4px;
+            }
+  
+            img {
+              width: 100%;
+            }
+          }
+  
+          .desc {
+            h3 {
+              color: $Marine-blue;
+              font-size: 1rem;
+              margin-bottom: 0.3rem;
+            }
+  
+            p {
+              color: $Cool-gray;
+              font-size: 14px;
+            }
+          }
+        }
+  
+        .right {
+          p {
+            color: $Purplish-blue;
+            font-size: 14px;
+          }
+        }
+      }
+}

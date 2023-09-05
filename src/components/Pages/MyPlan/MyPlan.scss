@@ -1,0 +1,37 @@
+@import '../../../styles/Responsive.scss';
+@import '../../../styles/Variables.scss';
+
+.myPlan{
+    border: 1px solid $Light-gray;
+    padding: 1.3rem 1rem;
+    border-radius: 8px;
+    width: 140px;
+    cursor: pointer;
+    transition: .3s;
+
+    &.active{
+        border: 1px solid $Marine-blue;
+        background: $Magnolia;
+    }
+
+    img{
+        margin-bottom: 2rem;
+    }
+
+    h3{
+        color: $Marine-blue;
+        margin-bottom: 0.3rem;
+        font-size: 16px;
+    }
+    p{
+        color: $Cool-gray;
+        font-size: 14px;
+        margin-bottom: 0.3rem;
+    }
+
+    span{
+        display: block;
+        font-size: 13px;
+        color: $Marine-blue;
+    }
+}

@@ -2,7 +2,7 @@
 @import '../../styles/Variables.scss';
 
 .layout{
-    width: 930px;
+    width: 950px;
     background: #fff;
     border-radius: 1rem;
     height: 600px;
@@ -13,5 +13,25 @@
 
     .main{
         padding: 2rem 6rem;
+
+        .title{
+            h1{
+                font-size: 2rem;
+                margin-bottom: .5rem;
+                color: $Marine-blue;
+             }
+        
+             p{
+                margin-bottom: 2.5rem;
+                color: $Cool-gray;
+             }
+        }
+
+        .buttonWrapper{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }

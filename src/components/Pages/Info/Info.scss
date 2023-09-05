@@ -2,6 +2,7 @@
 @import '../../../styles/Variables.scss';
 
 .info{
+   width: 450px;
      h1{
         font-size: 2rem;
         margin-bottom: .5rem;
@@ -11,5 +12,33 @@
      p{
         margin-bottom: 2rem;
         color: $Cool-gray;
+     }
+
+     form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+       .inputWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label{
+            color: $Marine-blue;
+            font-size: 14px;
+        }
+
+        input{
+            padding: 1rem 1.5rem;
+            border: 1px solid $Light-gray;
+            border-radius: 5px;
+        }
+       } 
+       
+       button{
+        align-self: flex-end;
+        margin-top: 3.5rem;
+       }
      }
 }
