@@ -1,0 +1,15 @@
+@import '../../../styles/Responsive.scss';
+@import '../../../styles/Variables.scss';
+
+.info{
+     h1{
+        font-size: 2rem;
+        margin-bottom: .5rem;
+        color: $Marine-blue;
+     }
+
+     p{
+        margin-bottom: 2rem;
+        color: $Cool-gray;
+     }
+}

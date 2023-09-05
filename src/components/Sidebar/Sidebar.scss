@@ -1,0 +1,54 @@
+@import "../../styles/Responsive.scss";
+@import "../../styles/Variables.scss";
+
+.sidebar {
+  height: 100%;
+  width: 270px;
+  border-radius: 0.9rem;
+  background-image: url(../../images//bg-sidebar-desktop.svg);
+  padding: 2rem;
+
+  .link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+    span {
+      display: grid;
+      place-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: $White;
+      font-size: 14px;
+      border: 1px solid #fff;
+    }
+
+    &.active {
+      span {
+        color: $Marine-blue;
+        background: $Light-blue;
+        border: 1px solid transparent;
+        
+      }
+    }
+
+    .titleWrapper{
+        text-transform: uppercase;
+
+        p{
+            font-size: 13px;
+            color: $Cool-gray;
+            margin-bottom: 0.2rem;
+        }
+
+        h1{
+            font-size: 14px;
+            color: $White;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+    }
+  }
+}
